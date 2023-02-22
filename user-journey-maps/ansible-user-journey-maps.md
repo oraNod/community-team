@@ -4,62 +4,44 @@ This document extends Ansible personas by identifying and describing their major
 
 Ansible community personas: https://hackmd.io/pZb5w5JFRQW3RJ73n23tlw?both#/
 
-```mermaid
-mindmap
-  root((Ansible automation))
-    Novice
-      Learn the basics
-    User
-      Write playbook
-        How do I make my automation consistent?
-        How do I make things reusable?
-        How do I organize my project as my automation grows?
-          How do I use roles to structure my project?
-        How do I share my automation?
-          How do I create a collection?
-          How do I allow others to run my playbook?
-            Running remotely
-              AWX
-                REST API
-                Web UI
-                cron
-              How do I plan my deployment?
-              How do I manage inventories?
-            Running locally
-              How do I use an execution environment?
-          How do I add to a collection?
-      Have something to automate
-        SRE process
-        Raspberry pi cluster
-        Network devices
-    Developer
-      Creating a Python virtual environment
-      Building execution environments
-    Community maintainer
-      Starting point one
-      Starting point two
-      Starting point three
-    Community member
-      Starting point one
-      Starting point two
-      Starting point three
-
-```
-
 ## Novice
 
 ```mermaid
 journey
-    title Novice
+    title Novice journeys
     section Learn the basics
       Understand the fundamentals of Ansible automation: 5: Novice
-      Install the Ansible package and run a hello world playbook: 5: Novice
+      Install the Ansible package and run a hello world playbook: 5:
     section Explore the Ansible package
       Create a virtual environment: 5: Novice
       Install additional Ansible dev tools: 5: Novice
 ```
 
 ## User
+
+```mermaid
+journey
+    title User journeys
+    section Write playbooks
+      How do I make my automation consistent?: 5:
+      How do I make things reusable?: 5:
+      How do I organize my project as my automation grows?: 5:
+        How do I use roles to structure my project?: 3:
+    section Run playbooks
+      Locally: 5:
+        How do I use an execution environment?: 5:
+      Remotely with AWX: 5:
+        REST API: 5:
+        Web UI: 5:
+        cron: 5:
+    section Share automation
+      How do I create a collection?: 5:
+      How do I allow others to run my playbook?: 5:
+    section Have something to automate
+      SRE process: 5:
+      Raspberry pi cluster: 5:
+      Network devices: 5:
+```
 
 ### Beginner tasks
 
