@@ -8,10 +8,8 @@ Ansible community personas: https://hackmd.io/pZb5w5JFRQW3RJ73n23tlw?both#/
 mindmap
   root((Ansible automation))
     Novice
-    ::icon(fa fa-thumbs-up)
       Learn the basics
     User
-    ::icon(fa fa-user)
       Write playbook
         How do I make my automation consistent?
         How do I make things reusable?
@@ -35,16 +33,13 @@ mindmap
         Raspberry pi cluster
         Network devices
     Developer
-    ::icon(fa fa-code)
       Creating a Python virtual environment
       Building execution environments
     Community maintainer
-    ::icon(fa fa-users)
       Starting point one
       Starting point two
       Starting point three
     Community member
-    ::icon(fa fa-cat)
       Starting point one
       Starting point two
       Starting point three
@@ -53,9 +48,16 @@ mindmap
 
 ## Novice
 
-- Learn the basics. Understand the fundamentals of Ansible automation in less than 5 minutes.
-- Get started. Install the Ansible package and run a hello world playbook.
-- Create a virtual environment and install additional Ansible dev tools.
+```mermaid
+journey
+    title Novice
+    section Learn the basics
+      Understand the fundamentals of Ansible automation: 5: Novice
+      Install the Ansible package and run a hello world playbook: 5: Novice
+    section Explore the Ansible package
+      Create a virtual environment: 5: Novice
+      Install additional Ansible dev tools: 5: Novice
+```
 
 ## User
 
